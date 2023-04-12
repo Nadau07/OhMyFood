@@ -1,0 +1,28 @@
+@mixin boutonFonction{
+    padding:28px 28px 28px 28px;
+    background: #f7f7f7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    border-color: transparent;
+    margin-bottom:24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Roboto';
+    font-size:16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@mixin cards{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF ;
+    border-radius: 15px;
+    margin-bottom:18px;
+}
+
+@mixin cards_img{
+    height:auto;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
