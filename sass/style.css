@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+header._logo {
+  width: 162px;
+  height: 44px;
+}
+
+.corp_de_page {
+  background-color: #EAEAEA;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+.intro._titre {
+  font-size: 24px;
+  font-family: "Roboto";
+}
+.intro_btn {
+  padding: 13px 18px 13px 18px;
+  border-radius: 25px;
+  color: white;
+  background-color: linear-gardient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
