@@ -1,10 +1,11 @@
-body, html {
+body {
   margin: 0;
+  font-family: "Roboto";
 }
 
 .header {
   width: 100%;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px black;
   display: flex;
   justify-content: center;
 }
@@ -12,14 +13,11 @@ body, html {
   width: 162px;
   height: 44px;
   padding-top: 14px;
-}
-
-.corp_de_page {
-  font-family: "Roboto";
+  padding-bottom: 5px;
 }
 
 .entete {
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   text-align: center;
 }
 .entete_titre {
@@ -36,7 +34,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #eaeaea;
+  background: #f2f2f2;
 }
 .intro_titre {
   width: 100%;
@@ -90,11 +88,17 @@ body, html {
   cursor: pointer;
 }
 
+/****SECTION RESTAURANT****/
 .restaurant {
   padding-top: 54px;
   width: 100%;
   background: #eaeaea;
   margin-top: 68px;
+  padding-bottom: 66px;
+}
+.restaurant_lien {
+  text-decoration: none;
+  color: black;
 }
 .restaurant_titre {
   margin-top: 0;
@@ -105,16 +109,18 @@ body, html {
   background: #FFFFFF;
   border-radius: 15px;
   margin-bottom: 18px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 .restaurant_card_img {
   height: auto;
   width: 100%;
   border-radius: 15px;
   object-fit: cover;
+  height: 231px;
 }
 .restaurant_card_info {
   padding-left: 13px;
-  font-family: "Roboto";
 }
 .restaurant_card_info p {
   margin: 0;
@@ -125,13 +131,27 @@ body, html {
 .restaurant_card_info h3 {
   font-size: 18px;
   font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+.restaurant_card_info i {
+  position: absolute;
+  right: 20px;
+  width: 22px;
+  height: 21px;
 }
 
+/***PAGES MENUS***/
+.menu_entree {
+  background: purple;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/***FOOTER***/
 .footer {
   background: #353535;
   color: white;
-  font-family: "Roboto";
-  margin-top: 66px;
 }
 .footer_titre {
   font-family: "Shrikhand";
@@ -141,6 +161,7 @@ body, html {
   line-height: 26px;
   padding-top: 22px;
   padding-left: 25px;
+  margin-top: 0;
 }
 .footer_list {
   list-style: none;

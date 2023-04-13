@@ -1,11 +1,12 @@
 
-body, html{
+body{
     margin:0;
+    font-family: 'Roboto';
 }
 
 .header{
     width: 100%;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 4px black;
     display: flex;
     justify-content: center;
 
@@ -13,17 +14,16 @@ body, html{
         width: 162px;
         height: 44px;
         padding-top: 14px;
+        padding-bottom: 5px;
        
     }
 }
 
-.corp_de_page{
-    font-family: 'Roboto';
-}
+
 
 
 .entete{
-    background-color:#d9d9d9 ;
+    background-color:#e6e6e6 ;
     text-align: center;
    
 
@@ -44,7 +44,7 @@ body, html{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #eaeaea;
+    background: #f2f2f2;
     
 
 
@@ -71,7 +71,7 @@ body, html{
         border-color: transparent;
         font-size: 16px;
         font-weight: 500;
-        font-family: 'Roboto';
+         font-family: 'Roboto';
         margin-bottom: 57px;
         cursor: pointer;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -95,13 +95,19 @@ body, html{
     }
 }
 
+/****SECTION RESTAURANT****/
+
 .restaurant{
     padding-top:54px;
     width: 100%;
     background: #eaeaea;
     margin-top:68px;
+    padding-bottom: 66px;
 
-
+    &_lien{
+        @include lienSimple;
+    }
+    
     &_titre{
         margin-top:0;
         padding-left:20px;
@@ -112,12 +118,11 @@ body, html{
 
         &_img{
             @include cards_img;
+            height:231px
         }
 
         &_info{
             padding-left: 13px;
-            font-family: 'Roboto';
-            
 
         }
         &_info p {
@@ -131,17 +136,52 @@ body, html{
         &_info h3{
             font-size:18px;
             font-weight: 700;
+            margin-top: 16px;
+            margin-bottom:5px;
+    
+
         }
+
+        &_info i {
+            position: absolute;
+            right: 20px;
+            width: 22px;
+            height: 21px;
+        }
+    
     }
 
 
 }
 
+/***PAGES MENUS***/
+
+.menu_card{
+    @include card_entree;
+}
+
+.menu_titre{
+    font-size:16px;
+    font-weight: 300;
+    border-bottom: 1px solid $couleur-tertiaire;
+}
+
+.corp_de_page{
+    width: 100%;
+    font-family: 'Roboto';
+
+    &_img{
+        width: 100%;
+        height: 378px;
+        object-fit: cover;        
+
+    }
+}
+
+/***FOOTER***/
 .footer{
     background: #353535;
     color:white;
-    font-family: 'Roboto';
-    margin-top:66px;
 
 
     &_titre{
@@ -152,6 +192,7 @@ body, html{
         line-height: 26px;
         padding-top:22px;
         padding-left:25px;
+        margin-top:0;
     }
 
     &_list{
