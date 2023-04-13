@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Menu - La palette du goût</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="sass/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/aeafd0c2c3.js"
@@ -25,102 +25,114 @@
       rel="stylesheet"
     />
   </head>
-<body>
+  <body>
     <header class="header">
+      <div class="header_arrowleft">
+     <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
       <img class="header_logo" src="img/ohmyfood.png" alt="Logo" />
+      
     </header>
 
-    <main class="corp_de_page">
-     <!-- <img class="corp_de_page_img" src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-      <h1>La palette du goût</h1>--->
-        
-
+    <main class="main">
+     
+      <img class="corp_de_page_img" src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+      <div class="corp_de_page">
+      <h1 class="corp_de_page_entete">La palette du goût</h1>
+       <span class="corp_de_page_icon"><i class="fa-regular fa-heart"></i></span>
+      </div>
+      
       <section class="menus">
-        <h1>La palette du goût</h1>
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
+        <h2 class="menus_titre">ENTREES</h2>
+
+        <div class="menu">
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Fricassée d'escargots</h3>
+              <p>Au piment d'Espelette</p>
+              <p class="menu_prix">25€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Foie gras de canard mi-cuit</h3>
+              <p>Et ses copeaux de truffe noire</p>
+              <p class="menu_prix">35€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Œuf au plat</h3>
+              <p>Assaisonné à la truffe sur lit de caviar</p>
+              <p class="menu_prix">20€</p>
+            </div>
+          </article>
+
+          <h2 class="menus_titre">PLATS</h2>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Filet de bœuf aux herbes</h3>
+              <p>Accompagné de sa ribambelle de légumes</p>
+              <p class="menu_prix">40€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Parmentier de queue de bœuf</h3>
+              <p>À la truffe noire sur sa purée de panais</p>
+              <p class="menu_prix">35€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Filet de turbot</h3>
+              <p>Aux agrumes</p>
+              <p class="menu_prix">44€</p>
+            </div>
+          </article>
+
+          <h2 class="menus_titre">DESSERT</h2>
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Paris-Brest</h3>
+              <p>Revisité</p>
+              <p class="menu_prix">18€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Macaron au chocolat d'exception</h3>
+              <p>Et glace à la vanille de Madagascar</p>
+              <p class="menu_prix">22€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Mousse au chocolat</h3>
+              <p>Au piment d'Espelette et à la truffe noire</p>
+              <p class="menu_prix">23€</p>
+            </div>
+          </article>
         </div>
-        <h2 class="menu_titre">ENTREES</h2>
 
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>Fricassée d'escargots</h3>
-            <p>Au piment d'Espelette</p>
-            <p>25€</p>
-          </div>
-        </article>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>Foie gras de canard mi-cuit</h3>
-            <p>Et ses copeaux de truffe noire</p>
-            <p>35€</p>
-          </div>
-        </article>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>Œuf au plat</h3>
-            <p>Assaisonné à la truffe sur lit de caviar</p>
-            <p>20€</p>
-          </div>
-        </article>
-
-        <h2 class="menu_titre">PLATS</h2>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>
-              Filet de bœuf aux herbes</h3>
-            <p>Accompagné de sa ribambelle de légumes</p>
-            <p>40€</p>
-          </div>
-        </article>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>Parmentier de queue de bœuf</h3>
-            <p>À la truffe noire sur sa purée de panais</p>
-            <p>35€</p>
-          </div>
-        </article>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>Filet de turbot</h3>
-            <p>Aux agrumes</p>
-            <p>44€</p>
-          </div>
-        </article>
-
-        <h2 class="menu_titre">DESSERT</h2>
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>
-              Paris-Brest</h3>
-            <p>Revisité</p>
-            <p>18€</p>
-          </div>
-        </article>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>
-              Macaron au chocolat d'exception </h3>
-            <p>Et glace à la vanille de Madagascar</p>
-            <p>22€</p>
-          </div>
-        </article>
-
-        <article class="menu_card">
-          <div class="menu_info">
-            <h3>Mousse au chocolat </h3>
-            <p>Au piment d'Espelette et à la truffe noire</p>
-            <p>23€</p>
-          </div>
-        </article>
+        <button class="btn_commander">Commander</button>
       </section>
     </main>
-    
-</body>
+    <footer class="footer">
+      <h2 class="footer_titre">ohmyfood</h2>
+      <ul class="footer_list">
+        <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
 </html>

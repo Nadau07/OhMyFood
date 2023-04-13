@@ -1,3 +1,5 @@
+/*****MIXINS BOUTONS*****/
+/*****MIXINS CARDS DES MENUS *****/
 body {
   margin: 0;
   font-family: "Roboto";
@@ -14,6 +16,17 @@ body {
   height: 44px;
   padding-top: 14px;
   padding-bottom: 5px;
+}
+.header_arrowleft {
+  font-size: x-large;
+  color: black;
+  position: relative;
+  top: 20px;
+  right: 45px;
+}
+.header_arrowleft a {
+  text-decoration: none;
+  color: black;
 }
 
 .entete {
@@ -57,10 +70,9 @@ body {
   border-color: transparent;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto";
-  margin-bottom: 57px;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 57px;
 }
 
 .fonctionnement {
@@ -88,7 +100,7 @@ body {
   cursor: pointer;
 }
 
-/****SECTION RESTAURANT****/
+/****SECTION RESTAURANT (INDEX)****/
 .restaurant {
   padding-top: 54px;
   width: 100%;
@@ -141,11 +153,104 @@ body {
   height: 21px;
 }
 
-/***PAGES MENUS***/
-.menu_entree {
-  background: purple;
+/***PAGES MENUS (PAGES RESTAURANTS)***/
+.main {
+  text-align: center;
+  width: 100%;
+  background: #f6f6f6;
+}
+
+.corp_de_page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transform: translateY(-50px);
+  margin: 0;
+  background-color: #f6f6f6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+.corp_de_page_img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+.corp_de_page_icon {
+  font-size: xx-large;
+  padding-right: 17px;
+}
+.corp_de_page_entete {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 400;
+  padding-left: 17px;
+  padding-top: 32px;
+  margin: 0;
+}
+
+.menus {
+  width: 100%;
+}
+.menus_titre {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  position: relative;
+  margin-left: 13px;
+  width: 40px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #99E2D0;
+}
+
+.menu_card {
+  background: #FFFFFF;
   border-color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 12px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+.menu_info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  margin: 0;
+}
+.menu_info h3 {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  padding-top: 12px;
+  margin: 0;
+}
+.menu_info p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 12px;
+}
+.menu_prix {
+  display: flex;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn_commander {
+  padding: 13px 18px 13px 18px;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /***FOOTER***/

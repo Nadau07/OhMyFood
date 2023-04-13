@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Menu - Le délice des sens</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="sass/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/aeafd0c2c3.js"
@@ -25,14 +25,112 @@
       rel="stylesheet"
     />
   </head>
-<body>
-    <header>
+  <body>
+    <header class="header">
+      <div class="header_arrowleft">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      </div>
       <img class="header_logo" src="img/ohmyfood.png" alt="Logo" />
-
     </header>
-    <main>
-        
+
+    <main class="main">
+     
+      <img class="corp_de_page_img" src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+      <div class="corp_de_page">
+      <h1 class="corp_de_page_entete">Le délice des sens</h1>
+       <spa class="corp_de_page_icon"><i class="fa-regular fa-heart"></i></span>
+      </div>
+      <section class="menus">
+        <h2 class="menus_titre">ENTREES</h2>
+
+        <div class="menu">
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Tartare de thon</h3>
+              <p>Assaisonné au yuzu</p>
+              <p class="menu_prix">25€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Bouchée de homard croustillant</h3>
+              <p>Et sa farandole de petits légumes</p>
+              <p class="menu_prix">35€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Velouté de cèpes</h3>
+              <p>Aux truffes</p>
+              <p class="menu_prix">20€</p>
+            </div>
+          </article>
+
+          <h2 class="menus_titre">PLATS</h2>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Poulet rôti aux herbes de Provence</h3>
+              <p>Et sa crème de truffe</p>
+              <p class="menu_prix">40€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Langouste rôtie</h3>
+              <p>Et ses légumes de saison</p>
+              <p class="menu_prix">35€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Côte de bœuf Angus</h3>
+              <p>Et sa purée de panais</p>
+              <p class="menu_prix">44€</p>
+            </div>
+          </article>
+
+          <h2 class="menus_titre">DESSERT</h2>
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Farandole de desserts</h3>
+              <p>Du chef</p>
+              <p class="menu_prix">18€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Crème brulée</h3>
+              <p>Revisitée</p>
+              <p class="menu_prix">22€</p>
+            </div>
+          </article>
+
+          <article class="menu_card">
+            <div class="menu_info">
+              <h3>Tiramisu</h3>
+              <p>À la noisette</p>
+              <p class="menu_prix">23€</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="btn_commander">Commander</button>
+      </section>
     </main>
-    
-</body>
+    <footer class="footer">
+      <h2 class="footer_titre">ohmyfood</h2>
+      <ul class="footer_list">
+        <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
 </html>
