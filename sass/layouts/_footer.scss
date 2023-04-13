@@ -1,0 +1,23 @@
+.footer {
+  background: #353535;
+  color: white;
+
+  &_titre {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 22px;
+    padding-left: 25px;
+    margin-top: 0;
+  }
+
+  &_list {
+    list-style: none;
+    gap: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 22px;
+  }
+}

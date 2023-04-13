@@ -1,0 +1,117 @@
+/***EN-TETE INDEX.HTML***/
+
+.entete {
+  background-color: #e6e6e6;
+  text-align: center;
+
+  &_titre {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+
+  &_titre i {
+    padding-right: 17px;
+  }
+}
+
+/****INTRO INDEX.HTML****/
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f2f2f2;
+
+  &_titre {
+    width: 100%;
+    font-size: 24px;
+    margin: 39px 58px 0 42px;
+    text-align: center;
+  }
+
+  &_p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  &_btn {
+    @include bouton_explor_and_command;
+    margin-bottom: 57px;
+  }
+}
+
+/***SECTION FONCTIONNEMENT INDEX.HTML***/
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+
+  &_titre {
+    font-size: 24px;
+    padding-left: 20px;
+    margin-bottom: 26px;
+    margin-top: 48px;
+  }
+
+  &_btn {
+    @include boutonFonction;
+
+    i {
+      padding-right: 20px;
+      color: #7e7e7e;
+    }
+  }
+}
+
+/****SECTION RESTAURANT (INDEX)****/
+
+.restaurant {
+  padding-top: 54px;
+  width: 100%;
+  background: #eaeaea;
+  margin-top: 68px;
+  padding-bottom: 66px;
+
+  &_lien {
+    @include lienSimple;
+  }
+
+  &_titre {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+
+  &_card {
+    @include cards;
+
+    &_img {
+      @include cards_img;
+      height: 231px;
+    }
+
+    &_info {
+      padding-left: 13px;
+    }
+    &_info p {
+      margin: 0;
+      padding-bottom: 12px;
+      font-weight: 300;
+      font-size: 17px;
+    }
+
+    &_info h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 16px;
+      margin-bottom: 5px;
+    }
+
+    &_heart {
+    }
+  }
+}

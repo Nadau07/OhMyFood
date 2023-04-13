@@ -1,8 +1,32 @@
 /*****MIXINS BOUTONS*****/
-/*****MIXINS CARDS DES MENUS *****/
+/*****MIXINS CARDS DE L'INDEX *****/
+/***MIXINS CARDS DES MENUS***/
+/***GENERAL***/
 body {
   margin: 0;
   font-family: "Roboto";
+}
+
+.footer {
+  background: #353535;
+  color: white;
+}
+.footer_titre {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 22px;
+  padding-left: 25px;
+  margin-top: 0;
+}
+.footer_list {
+  list-style: none;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 22px;
 }
 
 .header {
@@ -29,6 +53,7 @@ body {
   color: black;
 }
 
+/***EN-TETE INDEX.HTML***/
 .entete {
   background-color: #e6e6e6;
   text-align: center;
@@ -43,6 +68,7 @@ body {
   padding-right: 17px;
 }
 
+/****INTRO INDEX.HTML****/
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +92,7 @@ body {
   padding: 13px 18px 13px 18px;
   border-radius: 25px;
   color: white;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border-color: transparent;
   font-size: 16px;
   font-weight: 500;
@@ -75,6 +101,7 @@ body {
   margin-bottom: 57px;
 }
 
+/***SECTION FONCTIONNEMENT INDEX.HTML***/
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -99,6 +126,10 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
+.fonctionnement_btn i {
+  padding-right: 20px;
+  color: #7e7e7e;
+}
 
 /****SECTION RESTAURANT (INDEX)****/
 .restaurant {
@@ -118,16 +149,17 @@ body {
 }
 .restaurant_card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 15px;
   margin-bottom: 18px;
   margin-left: 14px;
   margin-right: 14px;
 }
 .restaurant_card_img {
-  height: auto;
+  height: 231px;
   width: 100%;
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   object-fit: cover;
   height: 231px;
 }
@@ -146,13 +178,6 @@ body {
   margin-top: 16px;
   margin-bottom: 5px;
 }
-.restaurant_card_info i {
-  position: absolute;
-  right: 20px;
-  width: 22px;
-  height: 21px;
-}
-
 /***PAGES MENUS (PAGES RESTAURANTS)***/
 .main {
   text-align: center;
@@ -200,11 +225,11 @@ body {
   margin-left: 13px;
   width: 40px;
   padding-bottom: 5px;
-  border-bottom: 4px solid #99E2D0;
+  border-bottom: 4px solid #99e2d0;
 }
 
 .menu_card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -243,7 +268,7 @@ body {
   padding: 13px 18px 13px 18px;
   border-radius: 25px;
   color: white;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border-color: transparent;
   font-size: 16px;
   font-weight: 500;
@@ -251,29 +276,6 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-/***FOOTER***/
-.footer {
-  background: #353535;
-  color: white;
-}
-.footer_titre {
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  padding-top: 22px;
-  padding-left: 25px;
-  margin-top: 0;
-}
-.footer_list {
-  list-style: none;
-  gap: 7px;
-  font-size: 16px;
-  font-weight: 400;
-  padding-bottom: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

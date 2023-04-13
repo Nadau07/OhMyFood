@@ -1,96 +1,92 @@
-
-
 /*****MIXINS BOUTONS*****/
 
-@mixin boutonFonction{
-    padding:28px 28px 28px 28px;
-    background: #f7f7f7;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    border-color: transparent;
-    margin-bottom:24px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Roboto';
-    font-size:16px;
-    font-weight: 600;
-    cursor: pointer;
+@mixin boutonFonction {
+  padding: 28px 28px 28px 28px;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: transparent;
+  margin-bottom: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-
-
-@mixin bouton_explor_and_command{
-    padding: 13px 18px 13px 18px;
-    border-radius:25px;
-    color:white;
-    background:linear-gradient(193.33deg, $couleur-primaire -11.44%, $couleur-secondaire 123.93%);
-    border-color: transparent;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-
+@mixin bouton_explor_and_command {
+  padding: 13px 18px 13px 18px;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(
+    193.33deg,
+    $couleur-primaire -11.44%,
+    $couleur-secondaire 123.93%
+  );
+  border-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+/*****MIXINS CARDS DE L'INDEX *****/
 
-/*****MIXINS CARDS DES MENUS *****/
-
-@mixin cards{
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    background: #FFFFFF ;
-    border-radius: 15px;
-    margin-bottom:18px;
-    margin-left:14px;
-    margin-right: 14px;
+@mixin cards {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
-@mixin cards_img{
-    height:auto;
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
+@mixin cards_img {
+  height: 231px;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  object-fit: cover;
 }
 
-@mixin lienSimple{
-    text-decoration: none;
-    color:black;
-    
+@mixin lienSimple {
+  text-decoration: none;
+  color: black;
 }
 
+/***MIXINS CARDS DES MENUS***/
 
 @mixin card_menu {
-    background: #FFFFFF;
-    border-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius:15px;
-    margin-bottom:12px;
-    margin-left: 13px;
-    margin-right: 13px;;
+  background: #ffffff;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 12px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 @mixin menu_info {
-    display:flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
-    margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  margin: 0;
 }
 
-@mixin titre_menu{
-    font-size:16px;
-    font-weight: 300;
-    line-height: 19px;
-    position: relative;
-    margin-left:13px;
-    width: 40px;
-    padding-bottom: 5px;
-    border-bottom: 4px solid $couleur-tertiaire;
-    
+@mixin titre_menu {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  position: relative;
+  margin-left: 13px;
+  width: 40px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid $couleur-tertiaire;
 }
-
 
 @mixin prix {
-    display:flex;
-    font-weight: 700;
-    font-size:15px;
-    
+  display: flex;
+  font-weight: 700;
+  font-size: 15px;
 }

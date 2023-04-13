@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  box-shadow: 0px 2px 4px black;
+  display: flex;
+  justify-content: center;
+
+  &_logo {
+    width: 162px;
+    height: 44px;
+    padding-top: 14px;
+    padding-bottom: 5px;
+  }
+
+  &_arrowleft {
+    font-size: x-large;
+    color: black;
+    position: relative;
+    top: 20px;
+    right: 45px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
