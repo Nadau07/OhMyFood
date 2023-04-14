@@ -1,5 +1,5 @@
 .footer {
-  background: #353535;
+  background: #353533 ;
   color: white;
 
   &_titre {
@@ -19,5 +19,9 @@
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 22px;
+
+    i{
+      padding-right:11px;
+    }
   }
 }

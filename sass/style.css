@@ -1,4 +1,5 @@
 /*****MIXINS BOUTONS*****/
+/*****MIXIN NUMERO SECTION FONCTIONNEMENT*****/
 /*****MIXINS CARDS DE L'INDEX *****/
 /***MIXINS CARDS DES MENUS***/
 /***GENERAL***/
@@ -8,7 +9,7 @@ body {
 }
 
 .footer {
-  background: #353535;
+  background: #353533;
   color: white;
 }
 .footer_titre {
@@ -27,6 +28,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 22px;
+}
+.footer_list i {
+  padding-right: 11px;
 }
 
 .header {
@@ -53,9 +57,9 @@ body {
   color: black;
 }
 
-/***EN-TETE INDEX.HTML***/
+/***SECTION EN-TETE***/
 .entete {
-  background-color: #e6e6e6;
+  background-color: #eaeaea;
   text-align: center;
 }
 .entete_titre {
@@ -68,7 +72,7 @@ body {
   padding-right: 17px;
 }
 
-/****INTRO INDEX.HTML****/
+/****SECTION INTRO****/
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +97,7 @@ body {
   border-radius: 25px;
   color: white;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  font-family: "Roboto";
   border-color: transparent;
   font-size: 16px;
   font-weight: 500;
@@ -101,10 +106,20 @@ body {
   margin-bottom: 57px;
 }
 
-/***SECTION FONCTIONNEMENT INDEX.HTML***/
+/***SECTION FONCTIONNEMENT***/
 .fonctionnement {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.fonctionnement_number {
+  border: 1px solid #9356dc;
+  border-radius: 50%;
+  padding: 2px 7px;
+  background-color: #9356dc;
+  color: white;
+  position: absolute;
+  left: 5px;
 }
 .fonctionnement_titre {
   font-size: 24px;
@@ -113,6 +128,9 @@ body {
   margin-top: 48px;
 }
 .fonctionnement_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 28px 28px 28px 28px;
   background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -123,15 +141,21 @@ body {
   margin-right: 20px;
   font-family: "Roboto";
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
 }
+.fonctionnement_btn:hover {
+  color: #9356dc;
+}
 .fonctionnement_btn i {
-  padding-right: 20px;
+  padding-right: 27px;
   color: #7e7e7e;
 }
+.fonctionnement_btn i:hover {
+  color: #9356dc;
+}
 
-/****SECTION RESTAURANT (INDEX)****/
+/****SECTION RESTAURANT****/
 .restaurant {
   padding-top: 54px;
   width: 100%;
@@ -165,12 +189,10 @@ body {
 }
 .restaurant_card_info {
   padding-left: 13px;
-}
-.restaurant_card_info p {
-  margin: 0;
-  padding-bottom: 12px;
-  font-weight: 300;
-  font-size: 17px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .restaurant_card_info h3 {
   font-size: 18px;
@@ -178,6 +200,25 @@ body {
   margin-top: 16px;
   margin-bottom: 5px;
 }
+.restaurant_card_info p {
+  margin: 0;
+  padding-bottom: 12px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.heart {
+  padding-right: 25px;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+}
+.heart:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 /***PAGES MENUS (PAGES RESTAURANTS)***/
 .main {
   text-align: center;
@@ -186,8 +227,10 @@ body {
 }
 
 .corp_de_page {
+  padding-top: 32px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   transform: translateY(-50px);
   margin: 0;
@@ -202,7 +245,12 @@ body {
 }
 .corp_de_page_icon {
   font-size: xx-large;
-  padding-right: 17px;
+  padding-right: 41px;
+}
+.corp_de_page_icon:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .corp_de_page_entete {
   font-family: "Shrikhand";
@@ -210,7 +258,6 @@ body {
   font-size: 28px;
   font-weight: 400;
   padding-left: 17px;
-  padding-top: 32px;
   margin: 0;
 }
 
@@ -219,7 +266,7 @@ body {
 }
 .menus_titre {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 19px;
   position: relative;
   margin-left: 13px;
@@ -240,6 +287,7 @@ body {
 .menu_info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 15px;
   margin: 0;
 }
@@ -260,8 +308,9 @@ body {
 }
 .menu_prix {
   display: flex;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 15px;
+  padding-right: 16px;
 }
 
 .btn_commander {
@@ -269,6 +318,7 @@ body {
   border-radius: 25px;
   color: white;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  font-family: "Roboto";
   border-color: transparent;
   font-size: 16px;
   font-weight: 500;

@@ -7,8 +7,10 @@
 }
 
 .corp_de_page {
+  padding-top:32px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   transform: translateY(-50px);
   margin: 0;
@@ -24,7 +26,11 @@
 
   &_icon {
     font-size: xx-large;
-    padding-right: 17px;
+    padding-right: 41px;
+
+    &:hover {
+      @include hover_favoris;
+    }
   }
 
   &_entete {
@@ -33,7 +39,6 @@
     font-size: 28px;
     font-weight: 400;
     padding-left: 17px;
-    padding-top: 32px;
     margin: 0;
   }
 }

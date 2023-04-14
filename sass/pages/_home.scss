@@ -1,8 +1,9 @@
-/***EN-TETE INDEX.HTML***/
+/***SECTION EN-TETE***/
 
 .entete {
-  background-color: #e6e6e6;
+  background-color: #eaeaea;
   text-align: center;
+  
 
   &_titre {
     margin: 0;
@@ -13,10 +14,11 @@
 
   &_titre i {
     padding-right: 17px;
+    
   }
 }
 
-/****INTRO INDEX.HTML****/
+/****SECTION INTRO****/
 
 .intro {
   display: flex;
@@ -45,11 +47,17 @@
   }
 }
 
-/***SECTION FONCTIONNEMENT INDEX.HTML***/
+/***SECTION FONCTIONNEMENT***/
 
 .fonctionnement {
+  width: 100%;
   display: flex;
   flex-direction: column;
+
+
+  &_number{
+    @include number;
+  }
 
   &_titre {
     font-size: 24px;
@@ -60,15 +68,21 @@
 
   &_btn {
     @include boutonFonction;
-
+    &:hover{
+      @include hover_fonction;
+    }
+    
     i {
-      padding-right: 20px;
+      padding-right: 27px;
       color: #7e7e7e;
+      &:hover{
+        @include hover_fonction;
+      }
     }
   }
 }
 
-/****SECTION RESTAURANT (INDEX)****/
+/****SECTION RESTAURANT****/
 
 .restaurant {
   padding-top: 54px;
@@ -95,13 +109,11 @@
     }
 
     &_info {
-      padding-left: 13px;
-    }
-    &_info p {
-      margin: 0;
-      padding-bottom: 12px;
-      font-weight: 300;
-      font-size: 17px;
+      padding-left: 13px; 
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &_info h3 {
@@ -111,7 +123,24 @@
       margin-bottom: 5px;
     }
 
-    &_heart {
+
+    &_info p {
+      margin: 0;
+      padding-bottom: 12px;
+      font-weight: 300;
+      font-size: 17px;
+  
     }
+
+  
   }
+}
+.heart{
+  @include favoris;
+  
+
+  &:hover {
+    @include hover_favoris;
+  }
+  
 }
