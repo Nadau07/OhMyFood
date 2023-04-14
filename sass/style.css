@@ -32,6 +32,10 @@ body {
 .footer_list i {
   padding-right: 11px;
 }
+.footer_list a {
+  text-decoration: none;
+  color: white;
+}
 
 .header {
   width: 100%;
@@ -45,14 +49,14 @@ body {
   padding-top: 14px;
   padding-bottom: 5px;
 }
-.header_arrowleft {
+.header_precedent {
   font-size: x-large;
   color: black;
   position: relative;
   top: 20px;
   right: 45px;
 }
-.header_arrowleft a {
+.header_precedent a {
   text-decoration: none;
   color: black;
 }
