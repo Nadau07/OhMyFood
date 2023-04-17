@@ -82,11 +82,18 @@
 /****SECTION RESTAURANT****/
 
 .restaurant {
+  position:relative;
   padding-top: 54px;
   width: 100%;
   background: #eaeaea;
   margin-top: 68px;
   padding-bottom: 66px;
+
+  &_new{
+    @include new;
+    position:absolute;
+    right: 50px;
+  }
 
   &_lien {
     @include lienSimple;

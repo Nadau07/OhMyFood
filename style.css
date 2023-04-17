@@ -158,11 +158,20 @@ body {
 
 /****SECTION RESTAURANT****/
 .restaurant {
+  position: relative;
   padding-top: 54px;
   width: 100%;
   background: #eaeaea;
   margin-top: 68px;
   padding-bottom: 66px;
+}
+.restaurant_new {
+  color: #008766;
+  background-color: #99e2d0;
+  padding: 7px;
+  margin: 0;
+  position: absolute;
+  right: 50px;
 }
 .restaurant_lien {
   text-decoration: none;

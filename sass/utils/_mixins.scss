@@ -63,6 +63,13 @@
   margin-right: 14px;
 }
 
+@mixin new{
+  color: $couleur-nouveau;
+    background-color: $couleur-tertiaire;
+    padding:7px;
+    margin:0;
+}
+
 @mixin cards_img {
   height: 231px;
   width: 100%;
