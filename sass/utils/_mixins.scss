@@ -19,7 +19,7 @@
 }
 
 @mixin hover_fonction{
-  color: $couleur-primaire;
+  background-color: $couleur-fonction;
 }
 
 
@@ -84,14 +84,15 @@
 }
 
 @mixin hover_favoris{
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+    background: linear-gradient(200.64deg, $couleur-primaire -5.2%, $couleur-secondaire 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /***MIXINS CARDS DES MENUS***/
 
 @mixin card_menu {
+  display: flex;
   background: #ffffff;
   border-color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -125,4 +126,15 @@
   font-weight: bold;
   font-size: 15px;
   padding-right: 16px;
+}
+
+@mixin check{
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  color:white;
+  padding-left:19px;
+  padding-right: 19px;
+  border-radius:0px 15px 15px 0;
+  background-color: $couleur-tertiaire;
 }

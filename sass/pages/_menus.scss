@@ -71,6 +71,10 @@
   &_prix {
     @include prix;
   }
+
+  &_check{
+    @include check;
+  }
 }
 
 .btn_commander {

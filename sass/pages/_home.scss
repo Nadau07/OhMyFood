@@ -75,9 +75,6 @@
     i {
       padding-right: 27px;
       color: #7e7e7e;
-      &:hover{
-        @include hover_fonction;
-      }
     }
   }
 }
@@ -141,6 +138,6 @@
 
   &:hover {
     @include hover_favoris;
+    
   }
-  
 }

@@ -149,14 +149,11 @@ body {
   cursor: pointer;
 }
 .fonctionnement_btn:hover {
-  color: #9356dc;
+  background-color: #f4b4dc;
 }
 .fonctionnement_btn i {
   padding-right: 27px;
   color: #7e7e7e;
-}
-.fonctionnement_btn i:hover {
-  color: #9356dc;
 }
 
 /****SECTION RESTAURANT****/
@@ -218,9 +215,9 @@ body {
   font-size: 22px;
 }
 .heart:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main {
@@ -251,9 +248,9 @@ body {
   padding-right: 41px;
 }
 .corp_de_page_icon:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .corp_de_page_entete {
   font-family: "Shrikhand";
@@ -279,6 +276,7 @@ body {
 }
 
 .menu_card {
+  display: flex;
   background: #ffffff;
   border-color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -315,6 +313,16 @@ body {
   font-size: 15px;
   padding-right: 16px;
 }
+.menu_check {
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 19px;
+  padding-right: 19px;
+  border-radius: 0px 15px 15px 0;
+  background-color: #99e2d0;
+}
 
 .btn_commander {
   padding: 13px 18px 13px 18px;
@@ -330,5 +338,8 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+/***ANIMATION SUR COEUR "FAVORIS"***/
+/***ANIMATION SUR CARDS "VALIDATION DU MENU"***/
 
 /*# sourceMappingURL=style.css.map */
