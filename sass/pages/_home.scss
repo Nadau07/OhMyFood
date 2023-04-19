@@ -57,6 +57,9 @@
 
   &_number{
     @include number;
+    position: absolute;
+    left:5px;
+    
   }
 
   &_titre {
@@ -75,6 +78,34 @@
     i {
       padding-right: 27px;
       color: #7e7e7e;
+    }
+  }
+
+  @media screen and (min-width: 600px){
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:37px;
+    justify-content: center;
+
+    &_titre{
+      width: 100%;
+      margin-left: 180px;
+    }
+
+    &_btn{
+      text-align: center;
+      width: 20%;
+      margin:0;
+      padding-right: 38px;
+      display: flex;
+      padding: 20px 38px 20px 28px;
+    }
+        
+    &_number{
+      position: relative;
     }
   }
 }
@@ -136,8 +167,32 @@
       font-size: 17px;
   
     }
+}
 
-  
+@media screen and (min-width: 600px){
+ width: 100%;
+
+ &_titre{
+  padding-left:180px;
+  width: 100%;
+ }
+&_card{
+  width: 35%
+}
+
+&_new{
+  position:relative;
+
+}
+}
+}
+.restaurants{
+  @media screen and (min-width:600px){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:91px;
+
   }
 }
 .heart{

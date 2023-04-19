@@ -1,7 +1,7 @@
 .main {
   text-align: center;
   width: 100%;
-  background: #f6f6f6;
+  background: white;
 }
 
 .corp_de_page {
@@ -15,6 +15,13 @@
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
+
+  @media screen and (min-width: 600px){
+    width: 70%;
+    margin-left:192px;
+    margin-right:192px;
+  }
+
 
   &_img {
     width: 100%;
@@ -41,12 +48,28 @@
   }
 }
 .menus {
+  background-color: #f6f6f6;
   width: 100%;
+
   &_titre {
     @include titre_menu;
   }
+
+  @media screen and (min-width: 600px){
+    width: 70%;
+    margin-left:192px;
+    background-color: #f6f6f6;
+    margin-right:192px;
+
+  }
+
 }
 .menu {
+
+  @media screen and (min-width: 600px){
+    margin-left:210px;
+    margin-right: 210px;
+  }
   &_card {
     @include card_menu;
   }

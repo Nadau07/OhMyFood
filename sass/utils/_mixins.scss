@@ -49,8 +49,6 @@
     padding: 2px 7px;
     background-color: $couleur-primaire;
     color: white;
-    position:absolute;
-    left:5px;
 }
 /*****MIXINS CARDS DE L'INDEX *****/
 
@@ -113,7 +111,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 15px;
+  
   margin: 0;
 }
 
@@ -132,7 +130,6 @@
   display: flex;
   font-weight: bold;
   font-size: 15px;
-  padding-right: 16px;
 }
 
 @mixin check{
