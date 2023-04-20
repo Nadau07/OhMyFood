@@ -204,6 +204,11 @@ body {
   margin-left: 14px;
   margin-right: 14px;
 }
+.restaurant_card:hover {
+  transform: scale(1.02);
+  transition: transform 200ms;
+  opacity: 0.9;
+}
 .restaurant_card_img {
   height: 231px;
   width: 100%;
