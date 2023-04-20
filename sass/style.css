@@ -1,4 +1,5 @@
 /*****MIXINS BOUTONS*****/
+/****FAVORIS******/
 /*****MIXIN NUMERO SECTION FONCTIONNEMENT*****/
 /*****MIXINS CARDS DE L'INDEX *****/
 /***MENU ENTREES/PLATS/DESSERTS***/
@@ -28,6 +29,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 22px;
+  margin-bottom: 0;
 }
 .footer_list i {
   padding-right: 11px;
@@ -113,8 +115,11 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 57px;
 }
-
-/***SECTION FONCTIONNEMENT***/
+.intro_btn:hover {
+  transform: scale(1.02);
+  transition: transform 100ms;
+  opacity: 0.9;
+} /***SECTION FONCTIONNEMENT***/
 .fonctionnement {
   width: 100%;
   display: flex;
@@ -144,7 +149,7 @@ body {
   background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  border-color: transparent;
+  border: none;
   margin-bottom: 24px;
   margin-left: 30px;
   margin-right: 20px;
@@ -152,6 +157,11 @@ body {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+}
+.fonctionnement_btn:hover {
+  transform: scale(1.02);
+  transition: transform 200ms;
+  opacity: 0.9;
 }
 .fonctionnement_btn:hover {
   background-color: #f4b4dc;
@@ -163,7 +173,6 @@ body {
 
 /****SECTION RESTAURANT****/
 .restaurant {
-  position: relative;
   padding-top: 54px;
   width: 100%;
   background: #eaeaea;
@@ -204,11 +213,9 @@ body {
   height: 231px;
 }
 .restaurant_card_info {
+  position: relative;
   padding-left: 13px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .restaurant_card_info h3 {
   font-size: 18px;
@@ -222,17 +229,25 @@ body {
   font-weight: 300;
   font-size: 17px;
 }
-
-.heart {
-  padding-right: 25px;
-  border: none;
-  background-color: transparent;
-  font-size: 22px;
+.restaurant_card_info i {
+  font-size: x-large;
+  position: absolute;
+  right: 16px;
+  top: 10%;
+  padding-right: 40px;
 }
-.heart:hover {
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+.restaurant_card .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.restaurant_card .fa-solid:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2) translateX(5%);
 }
 
 .main {
@@ -241,11 +256,9 @@ body {
 }
 
 .corp_de_page {
+  position: relative;
   padding-top: 32px;
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   margin: 0;
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
@@ -257,14 +270,23 @@ body {
   height: 275px;
   object-fit: cover;
 }
-.corp_de_page_icon {
+.corp_de_page i {
   font-size: xx-large;
-  padding-right: 41px;
+  position: absolute;
+  right: 10px;
 }
-.corp_de_page_icon:hover {
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+.corp_de_page .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.corp_de_page .fa-solid:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2) translateX(5%);
 }
 .corp_de_page_entete {
   font-family: "Shrikhand";
@@ -297,6 +319,7 @@ body {
   margin-bottom: 12px;
   margin-left: 13px;
   margin-right: 13px;
+  overflow: hidden;
 }
 .menu_info {
   padding-left: 15px;
@@ -304,25 +327,33 @@ body {
 }
 .menu_prix {
   margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 12px;
 }
 .menu_check {
-  font-size: x-large;
-  color: white;
   display: flex;
   align-items: center;
+  font-size: x-large;
+  color: white;
   padding: 0 19px 0 19px;
   border-radius: 0px 15px 15px 0;
   background-color: #99e2d0;
+  margin-right: -4rem;
 }
-.menu .menu_info_ingredient {
+.menu:hover .menu_check {
+  margin-right: 0;
+}
+
+.menu_info_ingredient {
   margin: 0;
 }
-.menu .menu_info_ingredient h3 {
+.menu_info_ingredient h3 {
   margin: 0;
   padding-top: 12px;
   padding-bottom: 5px;
 }
-.menu .menu_info_ingredient p {
+.menu_info_ingredient p {
   margin: 0;
   padding-bottom: 12px;
 }
@@ -343,6 +374,11 @@ body {
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin: 53px 0px 53px 0;
+}
+.commander_btn:hover {
+  transform: scale(1.02);
+  transition: transform 100ms;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,14 +2,14 @@
 
 @mixin boutonFonction {
  width: 80%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
   padding: 28px 28px 28px 28px;
   background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  border-color: transparent;
+  border: none;
   margin-bottom: 24px;
   margin-left: 30px;
   margin-right: 20px;
@@ -17,6 +17,11 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  &:hover{
+    transform: scale(1.02);
+    transition: transform 200ms;
+    opacity: 0.9;
+  }
 }
 
 @mixin hover_fonction {
@@ -29,17 +34,37 @@
   padding: 13px 18px 13px 18px;
   border-radius: 25px;
   color: white;
-  background: linear-gradient(193.33deg,
-      $couleur-primaire -11.44%,
-      $couleur-secondaire 123.93%);
+  background: linear-gradient(193.33deg, $couleur-primaire -11.44%, $couleur-secondaire 123.93%);
   font-family: 'Roboto';
   border-color: transparent;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+  &:hover{
+    transform: scale(1.02);
+    transition: transform 100ms;
+    opacity: 0.9;
+  }
 }
 
+/****FAVORIS******/
+
+@mixin heart{
+    color:transparent;
+    background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    &:hover{
+      cursor: pointer;
+      opacity: 1;
+      transform:scale(1.2) translateX(5%);
+      
+}
+}
 
 /*****MIXIN NUMERO SECTION FONCTIONNEMENT*****/
 @mixin number {
@@ -82,18 +107,6 @@
   color: black;
 }
 
-@mixin favoris {
-  padding-right: 25px;
-  border: none;
-  background-color: transparent;
-  font-size: 22px;
-}
-
-@mixin hover_favoris {
-  background: linear-gradient(200.64deg, $couleur-primaire -5.2%, $couleur-secondaire 110.74%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 /***MENU ENTREES/PLATS/DESSERTS***/
 @mixin titre_menu {
@@ -123,16 +136,16 @@ padding-left: 15px;
 }
 
 @mixin prix {
-  
+
   font-weight: bold;
   font-size: 15px;
 }
 
 @mixin check {
-  font-size: x-large;
-  color: white;
   display: flex;
   align-items: center;
+  font-size: x-large;
+  color: white;
  padding: 0 19px 0 19px;
   border-radius: 0px 15px 15px 0;
   background-color: $couleur-tertiaire;

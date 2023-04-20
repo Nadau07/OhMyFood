@@ -5,11 +5,9 @@
 
 
 .corp_de_page {
+  position: relative;
   padding-top: 32px;
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   margin:0;
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
@@ -22,14 +20,14 @@
     object-fit: cover;
   }
 
-  &_icon {
+  i {
     font-size: xx-large;
-    padding-right: 41px;
-
-    &:hover {
-      @include hover_favoris;
+    position: absolute;
+    right: 10px;
     }
-  }
+    .fa-solid{
+      @include heart;
+    }
 
   &_entete {
     font-family: "Shrikhand";
@@ -50,9 +48,11 @@
 }
 
 .menu{
+  
 
   &_card{
   @include card_menu;
+  overflow: hidden;
   }
 
   &_info{
@@ -62,12 +62,19 @@
 
 &_prix{
   margin-left:auto;
+  display:flex;
+  align-items: flex-end;
+  padding-bottom: 12px;
  
 }
-
 &_check{
   @include check;
-  
+  margin-right: -4rem;
+}
+&:hover .menu_check{
+  margin-right: 0;
+}
+
 
 }
 .menu_info_ingredient{
@@ -83,7 +90,7 @@
     padding-bottom:12px;
   }
 }
-}
+
 .commander{
   display:flex;
   justify-content: center;
