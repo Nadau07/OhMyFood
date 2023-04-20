@@ -1,27 +1,19 @@
 .main {
-  text-align: center;
   width: 100%;
   background: white;
 }
 
 .corp_de_page {
-  padding-top:32px;
+  padding-top: 32px;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  transform: translateY(-50px);
   margin: 0;
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
-
-  @media screen and (min-width: 600px){
-    width: 70%;
-    margin-left:192px;
-    margin-right:192px;
-  }
-
+  transform: translateY(-40px);
 
   &_img {
     width: 100%;
@@ -47,57 +39,39 @@
     margin: 0;
   }
 }
-.menus {
-  background-color: #f6f6f6;
-  width: 100%;
-
-  &_titre {
-    @include titre_menu;
-  }
-
-  @media screen and (min-width: 600px){
-    width: 70%;
-    margin-left:192px;
-    background-color: #f6f6f6;
-    margin-right:192px;
-
-  }
-
-}
 .menu {
 
-  @media screen and (min-width: 600px){
-    margin-left:210px;
-    margin-right: 210px;
+  background-color: #f6f6f6;
+  width: 100%;
+  &_titre {
+    @include titre_menu;
+    margin-top: 0;
   }
-  &_card {
-    @include card_menu;
-  }
-  &_info {
-    @include menu_info;
-    h3 {
-      display: flex;
-      width: 100%;
-      font-size: 18px;
-      font-weight: 500;
-      padding-bottom: 5px;
-      padding-top: 12px;
-      margin: 0;
-    }
-    p {
-      font-size: 15px;
-      font-weight: 300;
-      margin: 0;
-      padding-bottom: 12px;
-    }
-  }
-  &_prix {
-    @include prix;
+}
+
+.menu{
+
+  &_card{
+  @include card_menu;
   }
 
-  &_check{
-    @include check;
-  }
+  &_info{
+    @include menu_info;
+
+    &_ingredient{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    h3{
+      margin-top:12px;
+      margin-bottom:5px;
+    }
+    p{
+      margin:0;
+    }
+}
 }
 
 .btn_commander {

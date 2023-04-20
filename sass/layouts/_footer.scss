@@ -30,8 +30,8 @@
     }
   }
 
-  @media screen and (min-width: 600px){
-    /**SCSS POUR ECRANS DE 600PX MINIMUM**/
+  @media screen and (min-width: 990px){
+    /**SCSS POUR ECRANS DE 990PX MINIMUM**/
    width: 100%;
    display: flex;
    flex-direction: row-reverse;
@@ -46,6 +46,7 @@
     margin: 64px 26px 31px 0;
     display:flex;
     padding:0;
+    margin-bottom:0px;
    }
 
     }

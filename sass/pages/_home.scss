@@ -3,7 +3,6 @@
 .entete {
   background-color: #eaeaea;
   text-align: center;
-  
 
   &_titre {
     margin: 0;
@@ -14,13 +13,13 @@
 
   &_titre i {
     padding-right: 17px;
-    
   }
 }
 
 /****SECTION INTRO****/
 
 .intro {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -54,12 +53,10 @@
   display: flex;
   flex-direction: column;
 
-
-  &_number{
+  &_number {
     @include number;
     position: absolute;
-    left:5px;
-    
+    left: 5px;
   }
 
   &_titre {
@@ -71,41 +68,13 @@
 
   &_btn {
     @include boutonFonction;
-    &:hover{
+    &:hover {
       @include hover_fonction;
     }
-    
+
     i {
       padding-right: 27px;
       color: #7e7e7e;
-    }
-  }
-
-  @media screen and (min-width: 600px){
-   
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:37px;
-    justify-content: center;
-
-    &_titre{
-      width: 100%;
-      margin-left: 180px;
-    }
-
-    &_btn{
-      text-align: center;
-      width: 20%;
-      margin:0;
-      padding-right: 38px;
-      display: flex;
-      padding: 20px 38px 20px 28px;
-    }
-        
-    &_number{
-      position: relative;
     }
   }
 }
@@ -113,17 +82,17 @@
 /****SECTION RESTAURANT****/
 
 .restaurant {
-  position:relative;
+  position: relative;
   padding-top: 54px;
   width: 100%;
   background: #eaeaea;
   margin-top: 68px;
   padding-bottom: 66px;
 
-  &_new{
+  &_new {
     @include new;
-    margin-top:5px;
-    position:absolute;
+    margin-top: 5px;
+    position: absolute;
     right: 50px;
   }
 
@@ -145,7 +114,7 @@
     }
 
     &_info {
-      padding-left: 13px; 
+      padding-left: 13px;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -159,48 +128,17 @@
       margin-bottom: 5px;
     }
 
-
     &_info p {
       margin: 0;
       padding-bottom: 12px;
       font-weight: 300;
       font-size: 17px;
-  
     }
-}
-
-@media screen and (min-width: 600px){
- width: 100%;
-
- &_titre{
-  padding-left:180px;
-  width: 100%;
- }
-&_card{
-  width: 35%
-}
-
-&_new{
-  position:relative;
-
-}
-}
-}
-.restaurants{
-  @media screen and (min-width:600px){
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:91px;
-
   }
 }
-.heart{
+.heart {
   @include favoris;
-  
-
   &:hover {
     @include hover_favoris;
-    
   }
 }

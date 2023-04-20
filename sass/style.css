@@ -1,6 +1,7 @@
 /*****MIXINS BOUTONS*****/
 /*****MIXIN NUMERO SECTION FONCTIONNEMENT*****/
 /*****MIXINS CARDS DE L'INDEX *****/
+/***MENU ENTREES/PLATS/DESSERTS***/
 /***MIXINS CARDS DES MENUS***/
 /***GENERAL***/
 body {
@@ -36,9 +37,9 @@ body {
   text-decoration: none;
   color: white;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 990px) {
   .footer {
-    /**SCSS POUR ECRANS DE 600PX MINIMUM**/
+    /**SCSS POUR ECRANS DE 990PX MINIMUM**/
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -53,6 +54,7 @@ body {
     margin: 64px 26px 31px 0;
     display: flex;
     padding: 0;
+    margin-bottom: 0px;
   }
 }
 
@@ -97,6 +99,7 @@ body {
 
 /****SECTION INTRO****/
 .intro {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -151,6 +154,7 @@ body {
   margin-top: 48px;
 }
 .fonctionnement_btn {
+  width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -173,31 +177,6 @@ body {
 .fonctionnement_btn i {
   padding-right: 27px;
   color: #7e7e7e;
-}
-@media screen and (min-width: 600px) {
-  .fonctionnement {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 37px;
-    justify-content: center;
-  }
-  .fonctionnement_titre {
-    width: 100%;
-    margin-left: 180px;
-  }
-  .fonctionnement_btn {
-    text-align: center;
-    width: 20%;
-    margin: 0;
-    padding-right: 38px;
-    display: flex;
-    padding: 20px 38px 20px 28px;
-  }
-  .fonctionnement_number {
-    position: relative;
-  }
 }
 
 /****SECTION RESTAURANT****/
@@ -261,30 +240,6 @@ body {
   font-weight: 300;
   font-size: 17px;
 }
-@media screen and (min-width: 600px) {
-  .restaurant {
-    width: 100%;
-  }
-  .restaurant_titre {
-    padding-left: 180px;
-    width: 100%;
-  }
-  .restaurant_card {
-    width: 35%;
-  }
-  .restaurant_new {
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 91px;
-  }
-}
 
 .heart {
   padding-right: 25px;
@@ -299,7 +254,6 @@ body {
 }
 
 .main {
-  text-align: center;
   width: 100%;
   background: white;
 }
@@ -310,18 +264,11 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  transform: translateY(-50px);
   margin: 0;
   background-color: #f6f6f6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
-}
-@media screen and (min-width: 600px) {
-  .corp_de_page {
-    width: 70%;
-    margin-left: 192px;
-    margin-right: 192px;
-  }
+  transform: translateY(-40px);
 }
 .corp_de_page_img {
   width: 100%;
@@ -346,12 +293,11 @@ body {
   margin: 0;
 }
 
-.menus {
+.menu {
   background-color: #f6f6f6;
   width: 100%;
 }
-.menus_titre {
-  display: flex;
+.menu_titre {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -359,24 +305,10 @@ body {
   width: 40px;
   padding-bottom: 5px;
   border-bottom: 4px solid #99e2d0;
-}
-@media screen and (min-width: 600px) {
-  .menus {
-    width: 70%;
-    margin-left: 192px;
-    background-color: #f6f6f6;
-    margin-right: 192px;
-  }
+  margin-top: 0;
 }
 
-@media screen and (min-width: 600px) {
-  .menu {
-    margin-left: 210px;
-    margin-right: 210px;
-  }
-}
 .menu_card {
-  display: flex;
   background: #ffffff;
   border-color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -386,40 +318,19 @@ body {
   margin-right: 13px;
 }
 .menu_info {
+  padding-left: 12px;
+}
+.menu_info_ingredient {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 0;
 }
 .menu_info h3 {
-  display: flex;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 500;
-  padding-bottom: 5px;
-  padding-top: 12px;
-  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 5px;
 }
 .menu_info p {
-  font-size: 15px;
-  font-weight: 300;
   margin: 0;
-  padding-bottom: 12px;
-}
-.menu_prix {
-  display: flex;
-  font-weight: bold;
-  font-size: 15px;
-}
-.menu_check {
-  font-size: x-large;
-  display: flex;
-  align-items: center;
-  color: white;
-  padding-left: 19px;
-  padding-right: 19px;
-  border-radius: 0px 15px 15px 0;
-  background-color: #99e2d0;
 }
 
 .btn_commander {
@@ -436,8 +347,5 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
-/***ANIMATION SUR COEUR "FAVORIS"***/
-/***ANIMATION SUR CARDS "VALIDATION DU MENU"***/
 
 /*# sourceMappingURL=style.css.map */
