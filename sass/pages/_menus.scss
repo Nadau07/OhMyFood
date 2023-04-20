@@ -58,7 +58,7 @@
   &_info{
     @include menu_info;
     display:flex;
-}
+  }
 
 &_prix{
   margin-left:auto;
@@ -68,6 +68,19 @@
   @include check;
   
 
+}
+.menu_info_ingredient{
+  margin:0;
+
+  h3{
+    margin:0;
+    padding-top: 12px;
+    padding-bottom:5px;
+  }
+  p{
+    margin:0;
+    padding-bottom:12px;
+  }
 }
 }
 .commander{
