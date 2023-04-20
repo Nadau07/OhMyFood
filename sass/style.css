@@ -255,32 +255,27 @@ body {
   transform: scale(1.2) translateX(5%);
 }
 
-.main {
-  width: 100%;
-  background: white;
-}
-
-.corp_de_page {
-  position: relative;
-  padding-top: 32px;
-  width: 100%;
-  margin: 0;
-  background-color: #f6f6f6;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  transform: translateY(-40px);
-}
-.corp_de_page_img {
+.banniere img {
   width: 100%;
   height: 275px;
   object-fit: cover;
+  display: block;
 }
-.corp_de_page i {
-  font-size: xx-large;
+
+.main {
+  background: #f6f6f6;
+  margin-top: -20px;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  position: relative;
+}
+.main i {
+  font-size: x-large;
   position: absolute;
-  right: 10px;
+  right: 20px;
+  top: 35%;
 }
-.corp_de_page .fa-solid {
+.main .fa-solid {
   color: transparent;
   background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
@@ -288,34 +283,34 @@ body {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.corp_de_page .fa-solid:hover {
+.main .fa-solid:hover {
   cursor: pointer;
   opacity: 1;
   transform: scale(1.2) translateX(5%);
 }
-.corp_de_page_entete {
-  font-family: "Shrikhand";
-  font-style: italic;
+.main h1 {
+  font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
+  font-style: italic;
   padding-left: 17px;
   margin: 0;
+  padding-top: 32px;
+  padding-bottom: 42px;
 }
 
 .menu {
   background-color: #f6f6f6;
-  width: 100%;
 }
 .menu_titre {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 19px;
   margin-left: 13px;
   width: 40px;
   padding-bottom: 5px;
   border-bottom: 4px solid #99e2d0;
 }
-
 .menu_card {
   background: #ffffff;
   border-color: black;
@@ -331,6 +326,7 @@ body {
   display: flex;
 }
 .menu_prix {
+  padding-right: 25px;
   margin-left: auto;
   display: flex;
   align-items: flex-end;
@@ -354,16 +350,22 @@ body {
   margin: 0;
 }
 .menu_info_ingredient h3 {
+  font-size: 18px;
+  font-weight: 500;
   margin: 0;
   padding-top: 12px;
   padding-bottom: 5px;
 }
 .menu_info_ingredient p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
   margin: 0;
   padding-bottom: 12px;
 }
 
 .commander {
+  background: #f6f6f6;
   display: flex;
   justify-content: center;
 }

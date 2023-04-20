@@ -110,10 +110,6 @@
 
 /***MENU ENTREES/PLATS/DESSERTS***/
 @mixin titre_menu {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  margin-left: 13px;
   width: 40px;
   padding-bottom: 5px;
   border-bottom: 4px solid $couleur-tertiaire;

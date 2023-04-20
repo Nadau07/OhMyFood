@@ -1,102 +1,99 @@
-.main {
+.banniere img {
   width: 100%;
-  background: white;
+  height: 275px;
+  object-fit: cover;
+  display: block;
 }
 
-
-.corp_de_page {
-  position: relative;
-  padding-top: 32px;
+.main {
+  background: #f6f6f6;
+  margin-top: -20px;
+  border-radius: 25px 25px 0 0;
   width: 100%;
-  margin:0;
-  background-color: #f6f6f6;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  transform: translateY(-40px);
-
-  &_img {
-    width: 100%;
-    height: 275px;
-    object-fit: cover;
-  }
+  position: relative;
 
   i {
-    font-size: xx-large;
+    font-size: x-large;
     position: absolute;
-    right: 10px;
-    }
-    .fa-solid{
-      @include heart;
-    }
-
-  &_entete {
-    font-family: "Shrikhand";
-    font-style: italic;
+    right: 20px;
+    top: 35%;
+  }
+  .fa-solid {
+    @include heart;
+  }
+  h1 {
+    font-family: "Shrikhand", sans-serif;
     font-size: 28px;
     font-weight: 400;
+    font-style: italic;
     padding-left: 17px;
     margin: 0;
+    padding-top: 32px;
+    padding-bottom: 42px;
   }
 }
-.menu {
 
+.menu {
   background-color: #f6f6f6;
-  width: 100%;
   &_titre {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-left: 13px;
     @include titre_menu;
   }
-}
 
-.menu{
-  
-
-  &_card{
-  @include card_menu;
-  overflow: hidden;
+  &_card {
+    @include card_menu;
+    overflow: hidden;
   }
 
-  &_info{
+  &_info {
     @include menu_info;
-    display:flex;
+    display: flex;
   }
 
-&_prix{
-  margin-left:auto;
-  display:flex;
-  align-items: flex-end;
-  padding-bottom: 12px;
- 
+  &_prix {
+    padding-right: 25px;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 12px;
+  }
+  &_check {
+    @include check;
+    margin-right: -4rem;
+  }
+  &:hover .menu_check {
+    margin-right: 0;
+  }
 }
-&_check{
-  @include check;
-  margin-right: -4rem;
-}
-&:hover .menu_check{
-  margin-right: 0;
-}
+.menu_info_ingredient {
+  margin: 0;
 
-
-}
-.menu_info_ingredient{
-  margin:0;
-
-  h3{
-    margin:0;
+  h3 {
+    font-size:18px;
+    font-weight: 500;
+    margin: 0;
     padding-top: 12px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
   }
-  p{
-    margin:0;
-    padding-bottom:12px;
+  p {
+    font-size:15px;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 0;
+    padding-bottom: 12px;
   }
 }
 
-.commander{
-  display:flex;
+.commander {
+  background: #f6f6f6;
+  display: flex;
   justify-content: center;
 
-&_btn {
-  @include bouton_explor_and_command;
-  margin: 53px 0px 53px 0 ;
-}
+  &_btn {
+    @include bouton_explor_and_command;
+    margin: 53px 0px 53px 0;
+  }
 }
