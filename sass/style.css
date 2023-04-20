@@ -287,7 +287,6 @@ body {
   width: 40px;
   padding-bottom: 5px;
   border-bottom: 4px solid #99e2d0;
-  margin-top: 0;
 }
 
 .menu_card {
@@ -301,21 +300,25 @@ body {
 }
 .menu_info {
   padding-left: 12px;
-}
-.menu_info_ingredient {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-.menu_info h3 {
-  margin-top: 12px;
-  margin-bottom: 5px;
+.menu_prix {
+  margin-left: auto;
 }
-.menu_info p {
-  margin: 0;
+.menu_check {
+  font-size: x-large;
+  color: white;
+  padding-left: 19px;
+  padding-right: 19px;
+  border-radius: 0px 15px 15px 0;
+  background-color: #99e2d0;
 }
 
-.btn_commander {
+.commander {
+  display: flex;
+  justify-content: center;
+}
+.commander_btn {
   padding: 13px 18px 13px 18px;
   border-radius: 25px;
   color: white;
@@ -326,8 +329,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 53px 0px 53px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
