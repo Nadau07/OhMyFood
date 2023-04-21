@@ -1,0 +1,52 @@
+.loader{
+    background:  linear-gradient(193.33deg, $couleur-primaire -11.44%, $couleur-secondaire 123.93%);;
+    height: 100vh;
+    position:fixed;
+    inset: 0;
+    z-index:1;
+    /**opacity: 0.9;**/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.element_loader{
+    content:"";
+    padding: 40px;
+    border: 6px solid $couleur-primaire;
+    opacity: 50px;
+    border-radius: 50px;
+    position:relative;
+    animation: rotation 1s linear infinite;
+
+    &::after{
+        content: "";
+        padding:20px;
+        border: 10px solid transparent;
+        border-top-color: $couleur-secondaire;
+        border-radius: 50px;
+        position:absolute;
+        top: 8px;
+        left:9px;
+    }
+    &_titre{
+        position:absolute;
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 20px;
+        bottom:40%;
+        
+
+    }
+}
+
+@keyframes rotation{
+0% {
+    transform: rotate(0deg); 
+}
+100%{
+    transform: rotate(360deg)
+}
+}
+
+

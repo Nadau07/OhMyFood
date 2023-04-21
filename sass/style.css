@@ -399,4 +399,51 @@ h1 {
   opacity: 0.9;
 }
 
+.loader {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  /**opacity: 0.9;**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element_loader {
+  content: "";
+  padding: 40px;
+  border: 6px solid #9356dc;
+  opacity: 50px;
+  border-radius: 50px;
+  position: relative;
+  animation: rotation 1s linear infinite;
+}
+.element_loader::after {
+  content: "";
+  padding: 20px;
+  border: 10px solid transparent;
+  border-top-color: #ff79da;
+  border-radius: 50px;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+}
+.element_loader_titre {
+  position: absolute;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
+  bottom: 40%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
