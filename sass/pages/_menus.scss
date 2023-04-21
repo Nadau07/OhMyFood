@@ -4,32 +4,31 @@
   object-fit: cover;
   display: block;
 }
-
-.main {
+.restaurant_grostitre{
   background: #f6f6f6;
   margin-top: -20px;
-  border-radius: 25px 25px 0 0;
-  width: 100%;
+  padding : 32px 17px 42px 17px;
   position: relative;
+  border-radius: 25px 25px 0 0;
+  
+  h2{
+    font-size:28px;
+    font-weight: 400;
+    font-style: italic;
+    line-height:41px;
+    font-family: "Shrikhand", sans-serif;
+    margin:0;
+  }
 
   i {
-    font-size: x-large;
+    font-size: xx-large;
     position: absolute;
-    right: 20px;
-    top: 35%;
+    right: 15px;
+    top: 30%;
   }
   .fa-solid {
     @include heart;
-  }
-  h1 {
-    font-family: "Shrikhand", sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    font-style: italic;
-    padding-left: 17px;
-    margin: 0;
-    padding-top: 32px;
-    padding-bottom: 42px;
+    
   }
 }
 
@@ -41,17 +40,45 @@
     line-height: 19px;
     margin-left: 13px;
     @include titre_menu;
+   
   }
 
   &_card {
     @include card_menu;
     overflow: hidden;
+    &:hover .menu_check{
+      margin:0;
+    }
+
   }
 
   &_info {
     @include menu_info;
     display: flex;
+  
+    &_ingredient {
+      margin:0;
+      overflow: hidden;
+     
+    
+      h3 {
+        font-size:18px;
+        font-weight: 500;
+        margin: 0;
+        padding-top: 12px;
+        padding-bottom: 5px;
+        @include cache_info_check;
+            }
+       p {
+        font-size:15px;
+        font-weight: 300;
+        line-height: 18px;
+        margin: 0;
+        padding-bottom: 12px;
+        @include cache_info_check;
+      }
   }
+}
 
   &_prix {
     padding-right: 25px;
@@ -63,29 +90,14 @@
   &_check {
     @include check;
     margin-right: -4rem;
-  }
-  &:hover .menu_check {
-    margin-right: 0;
-  }
-}
-.menu_info_ingredient {
-  margin: 0;
 
-  h3 {
-    font-size:18px;
-    font-weight: 500;
-    margin: 0;
-    padding-top: 12px;
-    padding-bottom: 5px;
-  }
-  p {
-    font-size:15px;
-    font-weight: 300;
-    line-height: 18px;
-    margin: 0;
-    padding-bottom: 12px;
+    i{
+      @include config_check;
+      
+    }
   }
 }
+
 
 .commander {
   background: #f6f6f6;

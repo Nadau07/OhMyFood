@@ -1,35 +1,5 @@
 /*****MIXINS BOUTONS*****/
 
-@mixin boutonFonction {
- width: 80%;
- display: flex;
- flex-direction: row;
- align-items: center;
-  padding: 28px 28px 28px 28px;
-  background: #f7f7f7;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  border: none;
-  margin-bottom: 24px;
-  margin-left: 30px;
-  margin-right: 20px;
-  font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  &:hover{
-    transform: scale(1.02);
-    transition: transform 200ms;
-    opacity: 0.9;
-  }
-}
-
-@mixin hover_fonction {
-  background-color: $couleur-fonction;
-}
-
-
-
 @mixin bouton_explor_and_command {
   padding: 13px 18px 13px 18px;
   border-radius: 25px;
@@ -49,6 +19,7 @@
   }
 }
 
+
 /****FAVORIS******/
 
 @mixin heart{
@@ -66,15 +37,37 @@
 }
 }
 
-/*****MIXIN NUMERO SECTION FONCTIONNEMENT*****/
-@mixin number {
-  border: 1px solid $couleur-primaire;
-  border-radius: 50%;
-  padding: 2px 7px;
-  background-color: $couleur-primaire;
-  color: white;
+/*****MIXIN SECTION FONCTIONNEMENT*****/
+
+@mixin bouton_fonction {
+  &::before{
+    content: counter(number);
+    counter-increment: number;
+    background-color: $couleur-primaire;
+    color:white;
+    border-radius: 50px;
+    padding: 2px 7px;
+    position:relative;
+    right:35px;
+  }
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  padding: 28px 20px 28px 20px;
+  border : transparent;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  &:hover{
+    @include btn_zoom;
+  }
 }
 
+@mixin config_icone{
+  font-size:16px;
+      color: $couleur-icone;
+      margin-right: 23px;
+}
+@mixin btn_zoom{
+  transform: scale(1.01);
+}
 /*****MIXINS CARDS DE L'INDEX *****/
 
 @mixin cards {
@@ -85,6 +78,11 @@
   margin-bottom: 18px;
   margin-left: 14px;
   margin-right: 14px;
+  &:hover{
+    transform: scale(1.01);
+    transition: transform 200ms;
+    opacity: 0.9;
+  }
 }
 
 @mixin new {
@@ -92,6 +90,8 @@
   background-color: $couleur-tertiaire;
   padding: 7px;
   margin: 0;
+  border-radius: 2px;
+  font-size:14px;
 }
 
 @mixin cards_img {
@@ -125,6 +125,7 @@
   margin-bottom: 12px;
   margin-left: 13px;
   margin-right: 13px;
+  cursor: pointer;
 }
 
 @mixin menu_info{
@@ -140,9 +141,24 @@ padding-left: 15px;
 @mixin check {
   display: flex;
   align-items: center;
-  font-size: x-large;
-  color: white;
  padding: 0 19px 0 19px;
   border-radius: 0px 15px 15px 0;
   background-color: $couleur-tertiaire;
+  transition: all 0.7s;
 }
+
+@mixin config_check{
+     background: white;
+      border-radius: 50px;
+      color : $couleur-tertiaire;
+      width: 1.5rem;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+}
+
+@mixin cache_info_check{
+  overflow: hidden;
+        text-overflow: ellipsis ;
+        white-space: nowrap;
+      }
