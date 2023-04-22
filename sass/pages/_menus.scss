@@ -46,6 +46,7 @@
   &_card {
     @include card_menu;
     overflow: hidden;
+    
     &:hover .menu_check{
       margin:0;
     }

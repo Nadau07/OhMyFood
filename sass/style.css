@@ -204,8 +204,6 @@ h1 {
 }
 .restaurant_card:hover {
   transform: scale(1.01);
-  transition: transform 200ms;
-  opacity: 0.9;
 }
 .restaurant_card_img {
   height: 231px;
@@ -399,51 +397,92 @@ h1 {
   opacity: 0.9;
 }
 
-.loader {
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  height: 100vh;
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  /**opacity: 0.9;**/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.element_loader {
-  content: "";
-  padding: 40px;
-  border: 6px solid #9356dc;
-  opacity: 50px;
-  border-radius: 50px;
-  position: relative;
-  animation: rotation 1s linear infinite;
-}
-.element_loader::after {
-  content: "";
-  padding: 20px;
-  border: 10px solid transparent;
-  border-top-color: #ff79da;
-  border-radius: 50px;
-  position: absolute;
-  top: 8px;
-  left: 9px;
-}
-.element_loader_titre {
-  position: absolute;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 20px;
-  bottom: 40%;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
+@media screen and (min-width: 1024px) {
+  /**DESKTOP**/
+  .fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
   }
-  100% {
-    transform: rotate(360deg);
+  .fonctionnement h2 {
+    width: 100%;
+  }
+  .fonctionnement ol {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .fonctionnement li {
+    width: 25%;
+    margin: 0 20px 0 20px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    padding-top: 30px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 92px;
+  }
+  .restaurant_titre {
+    padding-left: 40px;
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: -32px;
+  }
+  .restaurant_card {
+    width: 40%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer_list {
+    margin-top: 58px;
+    display: flex;
+    gap: 10px;
+  }
+  .footer_titre {
+    padding: 0;
+    margin: 56px 26px 30px 16px;
+  }
+}
+/**.loader{
+    background:  linear-gradient(193.33deg, $couleur-primaire -11.44%, $couleur-secondaire 123.93%);;
+    height: 100vh;
+    position:fixed;
+    inset: 0;
+    z-index:1;
+    opacity: 0.9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.element_loader{
+    content:"";
+    padding: 40px;
+    border: 10px solid $couleur-primaire;
+    border-top: 10px solid $couleur-secondaire;
+    border-radius: 50px;
+    position:relative;
+    animation: rotation 1s linear infinite;
+
+}
+@keyframes rotation{
+    from{
+transform: rotate(360deg);
+}
+to {
+    animation:none;
+}
+}**/
 
 /*# sourceMappingURL=style.css.map */

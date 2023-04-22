@@ -1,0 +1,68 @@
+@media screen and (min-width:1024px){
+
+    /**DESKTOP**/
+
+.fonctionnement{
+    display: flex;
+    flex-wrap: wrap;
+    
+h2{
+    width: 100%;
+    
+}
+& ol {
+  
+   width: 100%;
+   flex-direction: row;
+   gap:10px;
+}
+& li {
+    width: 25%;
+    margin: 0 20px 0 20px;
+}
+
+}
+}
+@media screen and (min-width:1024px){
+.restaurant{
+    padding-top:30px;
+    margin-top:50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:92px;
+
+    &_titre{
+        padding-left:40px;
+        padding-top:0;
+        width: 100%;
+        margin-bottom:-32px;
+    }
+
+    &_card{
+        
+        width: 40%;
+        position: relative;
+    }   
+}
+}
+
+@media screen and (min-width:1024px){
+
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+
+        &_list{
+            margin-top: 58px;
+            display: flex;
+            gap: 10px;
+        }
+        &_titre{
+            padding:0;
+            margin: 56px 26px 30px 16px;
+        }
+    }
+}
