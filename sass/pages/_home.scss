@@ -68,9 +68,15 @@
   & li {
     margin-left: 30px;
     width: 75%;
+    &:hover {
+      color: $couleur-primaire;
+    }
     @include bouton_fonction;
     i {
       @include config_icone;
+      &:hover {
+        color: $couleur-primaire;
+      }
     }
   }
 }
