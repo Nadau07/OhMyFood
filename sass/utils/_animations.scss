@@ -1,5 +1,11 @@
 
-  @mixin animation_card{
-    animation : appear 3s;
+@keyframes anim_card_menu{
 
+  0% {
+    transform: scale(0);
+  }
+
+  100%{
+    transform:scale(1);
+  }
 }

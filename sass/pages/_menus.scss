@@ -46,6 +46,13 @@
   &_card {
     @include card_menu;
     overflow: hidden;
+    animation : anim_card_menu 2s;
+
+    @for $i from 1 through 12{
+      &:nth-child(#{$i}){
+        animation-delay: 100ms * $i;
+      }
+    }
     
     &:hover .menu_check{
       margin:0;

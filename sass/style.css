@@ -315,6 +315,43 @@ h1 {
   margin-right: 13px;
   cursor: pointer;
   overflow: hidden;
+  animation: anim_card_menu 2s;
+}
+.menu_card:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menu_card:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu_card:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu_card:nth-child(4) {
+  animation-delay: 400ms;
+}
+.menu_card:nth-child(5) {
+  animation-delay: 500ms;
+}
+.menu_card:nth-child(6) {
+  animation-delay: 600ms;
+}
+.menu_card:nth-child(7) {
+  animation-delay: 700ms;
+}
+.menu_card:nth-child(8) {
+  animation-delay: 800ms;
+}
+.menu_card:nth-child(9) {
+  animation-delay: 900ms;
+}
+.menu_card:nth-child(10) {
+  animation-delay: 1000ms;
+}
+.menu_card:nth-child(11) {
+  animation-delay: 1100ms;
+}
+.menu_card:nth-child(12) {
+  animation-delay: 1200ms;
 }
 .menu_card:hover .menu_check {
   margin: 0;
@@ -397,6 +434,14 @@ h1 {
   opacity: 0.9;
 }
 
+@keyframes anim_card_menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 1024px) {
   /**DESKTOP**/
   .fonctionnement {
@@ -414,6 +459,7 @@ h1 {
   .fonctionnement li {
     width: 25%;
     margin: 0 20px 0 20px;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -469,36 +515,40 @@ h1 {
     margin-right: 192px;
   }
 }
-/**.loader{
-    background:  linear-gradient(193.33deg, $couleur-primaire -11.44%, $couleur-secondaire 123.93%);;
-    height: 100vh;
-    position:fixed;
-    inset: 0;
-    z-index:1;
-    opacity: 0.9;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
+.loader {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 5s, visibility 5s;
 }
 
-.element_loader{
-    content:"";
-    padding: 40px;
-    border: 10px solid $couleur-primaire;
-    border-top: 10px solid $couleur-secondaire;
-    border-radius: 50px;
-    position:relative;
-    animation: rotation 1s linear infinite;
+.element_loader {
+  content: "";
+  padding: 40px;
+  border: 10px solid #9356dc;
+  border-top: 10px solid #ff79da;
+  border-radius: 50px;
+  position: relative;
+  animation: rotation 1s ease infinite;
+}
 
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
-@keyframes rotation{
-    from{
-transform: rotate(360deg);
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-to {
-    animation:none;
-}
-}**/
 
 /*# sourceMappingURL=style.css.map */
