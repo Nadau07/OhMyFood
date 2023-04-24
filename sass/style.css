@@ -315,7 +315,9 @@ h1 {
   margin-right: 13px;
   cursor: pointer;
   overflow: hidden;
-  animation: anim_card_menu 2s;
+  animation: anim_card_menu 1s;
+  animation-fill-mode: both;
+  /***Boucle pour animation ***/
 }
 .menu_card:nth-child(1) {
   animation-delay: 100ms;
