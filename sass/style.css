@@ -526,28 +526,25 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 5s, visibility 5s;
+  animation-delay: 5s;
+  animation: stop_anim 300ms 5s forwards;
 }
-
-.element_loader {
+.loader_element {
   content: "";
   padding: 40px;
   border: 10px solid #9356dc;
   border-top: 10px solid #ff79da;
   border-radius: 50px;
   position: relative;
-  animation: rotation 1s ease infinite;
+  animation: rotation 2s infinite;
 }
 
-.loader-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
+@keyframes stop_anim {
+  to {
+    transform: scale(0);
   }
+}
+@keyframes rotation {
   to {
     transform: rotate(360deg);
   }

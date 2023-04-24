@@ -7,31 +7,28 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 5s, visibility 5s; 
-    
-}
-
-
-.element_loader{
+    animation-delay:5s;
+    animation: stop_anim 300ms 5s forwards;
+  
+&_element{
     content:"";
     padding: 40px;
     border: 10px solid $couleur-primaire;
     border-top: 10px solid $couleur-secondaire;
     border-radius: 50px;
     position:relative;
-    animation: rotation 1s ease infinite;
-
+    animation: rotation 2s infinite;
+ 
+}
 }
 
-.loader-hidden{
-    opacity:0;
-    visibility: hidden;
+@keyframes stop_anim{
+    to{
+        transform:scale(0);
+    }
 }
-
 @keyframes rotation {
-    from{
-transform: rotate(0deg);
-}
+
 to {
    transform: rotate(360deg);
 }
