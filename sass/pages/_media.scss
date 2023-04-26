@@ -1,6 +1,5 @@
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
 
-    /**DESKTOP**/
 
 .fonctionnement{
     display: flex;
@@ -24,7 +23,7 @@ h2{
 
 }
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
 .restaurant{
     padding-top:30px;
     margin-top:50px;
@@ -50,7 +49,7 @@ h2{
 }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
 
     .footer{
         display: flex;
@@ -68,11 +67,13 @@ h2{
     }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
 
     .restaurant_grostitre{
         margin-left:192px;
         margin-right:192px;
+        display: flex;
+        justify-content: center;
     }
 
     .menu {

@@ -16,6 +16,7 @@
     transform: scale(1.02);
     transition: transform 100ms;
     opacity: 0.9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -57,6 +58,7 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   &:hover{
     @include btn_zoom;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   }
 }
 

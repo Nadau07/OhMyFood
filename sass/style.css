@@ -119,6 +119,7 @@ h1 {
   transform: scale(1.02);
   transition: transform 100ms;
   opacity: 0.9;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /***SECTION FONCTIONNEMENT***/
@@ -163,6 +164,7 @@ h1 {
 }
 .fonctionnement li:hover {
   transform: scale(1.01);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 .fonctionnement li i {
   font-size: 16px;
@@ -171,6 +173,7 @@ h1 {
 }
 .fonctionnement li i:hover {
   color: #9356dc;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /****SECTION RESTAURANT****/
@@ -301,6 +304,7 @@ h1 {
 
 .menu {
   background-color: #f6f6f6;
+  margin-top: -13px;
 }
 .menu_titre {
   font-size: 16px;
@@ -419,6 +423,7 @@ h1 {
 }
 
 .commander {
+  margin-top: -13px;
   background: #f6f6f6;
   display: flex;
   justify-content: center;
@@ -440,6 +445,7 @@ h1 {
   transform: scale(1.02);
   transition: transform 100ms;
   opacity: 0.9;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes anim_card_menu {
@@ -450,8 +456,7 @@ h1 {
     transform: scale(1);
   }
 }
-@media screen and (min-width: 1024px) {
-  /**DESKTOP**/
+@media screen and (min-width: 992px) {
   .fonctionnement {
     display: flex;
     flex-wrap: wrap;
@@ -470,7 +475,7 @@ h1 {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .restaurant {
     padding-top: 30px;
     margin-top: 50px;
@@ -492,7 +497,7 @@ h1 {
     position: relative;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -507,10 +512,12 @@ h1 {
     margin: 56px 26px 30px 16px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .restaurant_grostitre {
     margin-left: 192px;
     margin-right: 192px;
+    display: flex;
+    justify-content: center;
   }
   .menu {
     margin-left: 192px;
