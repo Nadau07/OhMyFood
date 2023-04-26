@@ -519,6 +519,14 @@ h1 {
     display: flex;
     justify-content: center;
   }
+  .heart-div {
+    position: relative;
+  }
+  .heart-div i {
+    position: absolute;
+    left: 24px;
+    top: 5px;
+  }
   .menu {
     margin-left: 192px;
     margin-right: 192px;

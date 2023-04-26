@@ -74,6 +74,18 @@ h2{
         margin-right:192px;
         display: flex;
         justify-content: center;
+
+    }
+
+    .heart-div{
+        position: relative;
+
+        & i {
+            position:absolute;
+            left:24px;
+            top:5px;
+
+        }
     }
 
     .menu {
