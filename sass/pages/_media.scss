@@ -1,11 +1,37 @@
 @media screen and (min-width:992px){
+    .restaurant{
+        padding-top:30px;
+        margin-top:50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:92px;
+    
+        &_titre{
+            padding-left:40px;
+            padding-top:0;
+            width: 100%;
+            margin-bottom:-32px;
+        }
+    
+        &_card{
+            
+            width: 40%;
+            position: relative;
+        }   
+    }
+    }
+
+@media screen and (min-width:1022px){
 
 
 .fonctionnement{
     display: flex;
     flex-wrap: wrap;
     
-h2{
+& h2{
     width: 100%;
     
 }
@@ -23,7 +49,8 @@ h2{
 
 }
 }
-@media screen and (min-width:992px){
+
+@media screen and (min-width:1022px){
 .restaurant{
     padding-top:30px;
     margin-top:50px;
@@ -49,7 +76,9 @@ h2{
 }
 }
 
-@media screen and (min-width:992px){
+
+
+@media screen and (min-width:1022px){
 
     .footer{
         display: flex;
@@ -67,7 +96,7 @@ h2{
     }
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:1022px){
 
     .restaurant_grostitre{
         margin-left:192px;
@@ -98,5 +127,30 @@ h2{
 .commander{
     margin-left: 192px;
     margin-right:192px;
+}
+}
+
+
+@media screen and (min-width:1440px){
+
+    .fonctionnement{
+
+        h2{
+            padding-left: 180px;
+        }
+
+        ol{
+            padding-left:170px;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+
+    .restaurant{
+
+        &_titre{
+            padding-left:140px;
+        }
 }
 }

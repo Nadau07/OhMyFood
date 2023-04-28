@@ -457,25 +457,6 @@ h1 {
   }
 }
 @media screen and (min-width: 992px) {
-  .fonctionnement {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .fonctionnement h2 {
-    width: 100%;
-  }
-  .fonctionnement ol {
-    width: 100%;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .fonctionnement li {
-    width: 25%;
-    margin: 0 20px 0 20px;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 992px) {
   .restaurant {
     padding-top: 30px;
     margin-top: 50px;
@@ -497,7 +478,48 @@ h1 {
     position: relative;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1022px) {
+  .fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+  }
+  .fonctionnement ol {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .fonctionnement li {
+    width: 25%;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1022px) {
+  .restaurant {
+    padding-top: 30px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 92px;
+  }
+  .restaurant_titre {
+    padding-left: 40px;
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: -32px;
+  }
+  .restaurant_card {
+    width: 40%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1022px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -512,7 +534,7 @@ h1 {
     margin: 56px 26px 30px 16px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1022px) {
   .restaurant_grostitre {
     margin-left: 192px;
     margin-right: 192px;
@@ -536,6 +558,19 @@ h1 {
   .commander {
     margin-left: 192px;
     margin-right: 192px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement h2 {
+    padding-left: 180px;
+  }
+  .fonctionnement ol {
+    padding-left: 170px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurant_titre {
+    padding-left: 140px;
   }
 }
 .loader {
