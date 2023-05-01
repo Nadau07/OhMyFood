@@ -103,20 +103,16 @@
         margin-right:192px;
         display: flex;
         justify-content: center;
-
-    }
-
-    .heart-div{
+     & i {
         position: relative;
+        left:20px;
 
-        & i {
-            position:absolute;
-            left:24px;
-            top:5px;
-
+        &.fa-solid{
+            left:-13px;
         }
+     }
     }
-
+   
     .menu {
           margin-left: 192px;
           margin-right: 192px;
@@ -152,5 +148,15 @@
         &_titre{
             padding-left:140px;
         }
+}
+.restaurant_grostitre{
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+}
+.menu{
+    margin-left:192px;
+    margin-right: 193px;
+    padding-left: 210px;
+    padding-right:211px;
 }
 }
