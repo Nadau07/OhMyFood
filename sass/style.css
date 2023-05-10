@@ -1,4 +1,10 @@
-
+/*****MIXINS BOUTONS*****/
+/****FAVORIS******/
+/*****MIXIN SECTION FONCTIONNEMENT*****/
+/*****MIXINS CARDS DE L'INDEX *****/
+/***MENU ENTREES/PLATS/DESSERTS***/
+/***MIXINS CARDS DES MENUS***/
+/***GENERAL***/
 body {
   margin: 0;
   font-family: "Roboto";
@@ -143,9 +149,6 @@ h1 {
   border: transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
-.fonctionnement li:hover {
-  color: #9356dc;
-}
 .fonctionnement li::before {
   content: counter(number);
   counter-increment: number;
@@ -156,18 +159,13 @@ h1 {
   position: relative;
   right: 35px;
 }
-.fonctionnement li:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-}
 .fonctionnement li i {
   font-size: 16px;
   color: #7E7E7E;
   margin-right: 23px;
 }
-.fonctionnement li i:hover {
+.fonctionnement li .fa-store {
   color: #9356dc;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /****SECTION RESTAURANT****/

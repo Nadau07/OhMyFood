@@ -56,10 +56,6 @@
   padding: 28px 20px 28px 20px;
   border : transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  &:hover{
-    @include btn_zoom;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  }
 }
 
 @mixin config_icone{

@@ -68,16 +68,12 @@
   & li {
     margin-left: 30px;
     width: 75%;
-    &:hover {
-      color: $couleur-primaire;
-    }
     @include bouton_fonction;
     i {
       @include config_icone;
-      &:hover {
-        color: $couleur-primaire;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-      }
+    }
+    .fa-store{
+      color : $couleur-primaire;
     }
   }
 }
