@@ -138,7 +138,7 @@ padding-left: 15px;
   display: flex;
   align-items: center;
  padding: 0 19px 0 19px;
-  border-radius: 0px 15px 15px 0;
+  border-radius: 0px 15px 15px 0px;
   background-color: $couleur-tertiaire;
   transition: all 0.7s;
 }
@@ -150,6 +150,7 @@ padding-left: 15px;
       width: 1.5rem;
       display: grid;
       place-items: center;
+     
 }
 
 @mixin cache_info_check{
